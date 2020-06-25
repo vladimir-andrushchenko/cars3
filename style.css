@@ -8,8 +8,14 @@ h1 {
   color: pink;
 }
 
-.body {
+.body-1 {
   fill: #e8505b;
+}
+.body-2 {
+  fill: #2d21ab;
+}
+.body-3 {
+  fill: #39a130;
 }
 .cls-2 {
   fill: #263238;
@@ -20,12 +26,12 @@ h1 {
 .cls-4 {
   fill: #e0e0e0;
 }
-/* .cls-5 {
+.cls-5 {
   opacity: 0.7;
 }
 .cls-7 {
   opacity: 0.5;
-} */
+}
 .cls-8 {
   fill: #fff;
 }
@@ -36,12 +42,17 @@ h1 {
   fill: #ebebeb;
 }
 
+.container {
+  display: flex;
+}
+
 svg {
   animation-name: drive;
   animation-duration: 5s;
   animation-iteration-count: 1;
   animation-direction: normal;
-  width: 90vw;
+  margin-left: 1em;
+  width: 20vw;
 }
 
 @keyframes drive {
