@@ -1,67 +1,103 @@
-body {
+/* ! для тестирования */
+/* body * {
+  border: 1px solid black;
+} */
+/* ! для тестирования */
+
+* {
   padding: 0;
   margin: 0;
-  background: #fefefe;
 }
 
-h1 {
-  color: pink;
+body {
+  padding: 1em;
+  background: #ffffff;
+  color: #333;
+  max-width: 800px;
+  margin: 0 auto;
+  font-family: 'Montserrat', sans-serif;
 }
 
-.body-1 {
+header {
+  padding: 0.5em;
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1em;
+}
+
+/* * info */
+.info {
+  margin-bottom: 1em;
+}
+
+ul {
+  list-style: none;
+}
+
+li span {
+  font-size: 1.4em;
+}
+
+li {
+  font-size: 1.2em;
+}
+
+/* * contact info */
+
+.contact-info {
+  font-weight: 700;
+  text-align: right;
+}
+
+.contact-tel {
+  color: #e8505b;
+  transition: 0.5s;
+}
+.contact-tel:hover {
+  color: #e98087;
+}
+
+.contact-info h2 {
+  margin-top: 0.7em;
+}
+
+/* * logo */
+#logo {
+  height: 100%;
+}
+
+.logo-color {
   fill: #e8505b;
 }
-.body-2 {
-  fill: #2d21ab;
-}
-.body-3 {
-  fill: #39a130;
-}
 
-.cls-2 {
-  fill: #263238;
-}
-.cls-3 {
-  fill: #fafafa;
-}
-.cls-4 {
-  fill: #e0e0e0;
-}
-.cls-5 {
-  opacity: 0.7;
-}
-.cls-7 {
-  opacity: 0.5;
-}
-.cls-8 {
-  fill: #fff;
-}
-.cls-9 {
-  fill: #467083;
-}
-.cls-10 {
-  fill: #ebebeb;
-}
-
-.container {
-  display: flex;
-}
-
-svg {
-  animation-name: drive;
-  animation-duration: 5s;
-  animation-iteration-count: 1;
-  animation-direction: normal;
+/* * hero */
+#car {
+  animation: drive 10s ease-in-out infinite normal;
   margin-left: 1em;
-  width: 20vw;
 }
 
 @keyframes drive {
-  from {
-    transform: translateX(100vw);
+  0% {
+    transform: translateX(100%);
   }
 
-  to {
+  25% {
     transform: translateX(0);
   }
+
+  75% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* * map */
+
+#map {
+  height: 80vh;
+  padding: 1em;
 }
