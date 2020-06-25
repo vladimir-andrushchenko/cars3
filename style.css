@@ -1,0 +1,55 @@
+body {
+  padding: 0;
+  margin: 0;
+  background: #fefefe;
+}
+
+h1 {
+  color: pink;
+}
+
+.body {
+  fill: #e8505b;
+}
+.cls-2 {
+  fill: #263238;
+}
+.cls-3 {
+  fill: #fafafa;
+}
+.cls-4 {
+  fill: #e0e0e0;
+}
+/* .cls-5 {
+  opacity: 0.7;
+}
+.cls-7 {
+  opacity: 0.5;
+} */
+.cls-8 {
+  fill: #fff;
+}
+.cls-9 {
+  fill: #467083;
+}
+.cls-10 {
+  fill: #ebebeb;
+}
+
+svg {
+  animation-name: drive;
+  animation-duration: 5s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  width: 90vw;
+}
+
+@keyframes drive {
+  from {
+    transform: translateX(100vw);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}
