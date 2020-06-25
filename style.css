@@ -1,16 +1,9 @@
-/* ! для тестирования */
-/* body * {
-  border: 1px solid black;
-} */
-/* ! для тестирования */
-
 * {
   padding: 0;
   margin: 0;
 }
 
 body {
-  padding: 1em;
   background: #ffffff;
   color: #333;
   max-width: 800px;
@@ -18,17 +11,57 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
-header {
-  padding: 0.5em;
-  height: 10vh;
+
+/* * contact info */
+
+.contact-info {
+  font-weight: 700;
+  padding: 1em;
+}
+
+.contact-tel {
+  color: #e8505b;
+  transition: 0.5s;
+}
+.contact-tel:hover {
+  color: #e98087;
+}
+
+/* * logo */
+
+.logo-container {
+  height: 20vh;
   display: flex;
-  justify-content: space-between;
-  margin-bottom: 1em;
+  justify-content: center;
+  margin: 1.7em;
+}
+
+#logo {
+  height: 100%;
+}
+
+.logo-color {
+  fill: #e8505b;
+  animation: color-rotate  5s ease-in 1;
+}
+
+@keyframes color-rotate {
+  0% {
+    fill: rgb(255, 255, 0);
+  }
+  50% {
+    fill: #58e850;
+  }
+  100% {
+    fill: #e8505b;
+  }
 }
 
 /* * info */
 .info {
-  margin-bottom: 1em;
+  margin: 1em;
+  padding-bottom: 1em;
+  border-bottom: #e8505b solid 2px;
 }
 
 ul {
@@ -41,34 +74,8 @@ li span {
 
 li {
   font-size: 1.2em;
-}
-
-/* * contact info */
-
-.contact-info {
-  font-weight: 700;
-  text-align: right;
-}
-
-.contact-tel {
-  color: #e8505b;
-  transition: 0.5s;
-}
-.contact-tel:hover {
-  color: #e98087;
-}
-
-.contact-info h2 {
-  margin-top: 0.7em;
-}
-
-/* * logo */
-#logo {
-  height: 100%;
-}
-
-.logo-color {
-  fill: #e8505b;
+  margin-bottom: .3em;
+  /* line-height: 1.2; */
 }
 
 /* * hero */
@@ -98,6 +105,7 @@ li {
 /* * map */
 
 #map {
-  height: 80vh;
+  margin-top: 2em;
+  height: 40vh;
   padding: 1em;
 }
